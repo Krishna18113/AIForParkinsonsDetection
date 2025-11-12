@@ -135,7 +135,7 @@ function App() {
             {loading && <p>Analyzing...</p>}
             {risk && !loading && (
               <p className="text-xl">
-                Parkinson’s Safe Score: <span className="font-bold">{risk.toFixed(2)}</span>
+                Parkinson’s Risk Score: <span className="font-bold">{(1 - risk).toFixed(2)}</span>
               </p>
             )}
           </div>
